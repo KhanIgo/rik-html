@@ -1,0 +1,157 @@
+$paddings: 15px;
+$desktop-max-width: 990px;
+$mobile-max-width: 980px;
+
+body{
+    width: 100vw;
+    font-size: 16px;
+    min-height: 100vh;
+    @include d-flex;
+    flex-direction: column;
+//    background-color: $greyL;
+    color: $cGrey;
+    overflow-x: hidden;
+    @media (max-width: 900px) {
+        padding-top: 70px;
+    }
+}
+
+
+.row{
+    width: 100%;
+    padding-left: $paddings;
+    padding-right: $paddings;
+}
+.d-none, .dn{
+    display: none;
+}
+.row-flex{
+    width: 100%;
+    padding-left: $paddings;
+    padding-right: $paddings;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+.j-left{
+    justify-content: flex-start
+}
+.j-right{
+    justify-content: flex-end;
+}
+.flex-end{
+    justify-content: flex-end !important;
+}
+body>.row, body>.row-flex{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container, .cnt
+{
+    width: 100%;
+    max-width: $desktop-max-width;
+    padding-left: $paddings;
+    padding-right: $paddings;
+    margin-left: auto;
+    margin-right: auto;
+    &_flex{
+        @include d-flex;
+    }
+    &_flex-wrap{
+        @include d-flex;
+        flex-wrap: wrap;
+    }
+}
+
+.g-ovh{ overflow: hidden; }
+.p0{
+    padding-left: 0;
+    padding-right: 0;
+}
+.pl0{
+    padding-left: 0;
+}
+.pr0{
+    padding-right: 0;
+}
+
+.m-0{
+    @include mtb(0);
+}
+.m-1{
+    margin: 1em;
+}
+.m-2{
+    margin: 2em;
+}
+.m-3{
+    margin: 3em;
+}
+.m-1-0{
+    margin: 1em 0;
+}
+.m-2-0{
+    margin: 2em 0;
+}
+.m-3-0{
+    margin: 3em 0;
+}
+
+.grid{
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 15px;
+    &_1-1{
+        width: 100%;
+    }
+    &_1-2{
+        width: 50%;
+    }
+    &_1-3{
+        width: 33.33%;
+        @media (max-width: 1000px) { width: 50%; }
+    }
+    &_2-3{
+        width: 66.66%;
+    }
+    &_1-4{
+        width: 25%;
+        @media (max-width: 1000px) { width: 50%; }
+    }
+    &_3-4{
+        width: 75%;
+    }
+    
+    @media (max-width: 700px) {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+
+.col-1{width: 8.3333%;}
+.col-2{width: 16.6666%;}
+.col-3{width: 25%;}
+.col-4{width: 33.3333%;}
+.col-5{width: 41.6666%;}
+.col-6{width: 50%;}
+.col-7{width: 58.3333%;}
+.col-8{width: 66.6666%;}
+.col-9{width: 75%;}
+.col-10{width: 83.3333%;}
+.col-11{width: 91.6666%;}
+.col-12{ width: 100%; }
+
+
+.full-height{
+    height: 100vh;
+}
+
+.desk{}
+.mob{}
+.tab{}
