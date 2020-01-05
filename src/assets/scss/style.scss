@@ -1,21 +1,2 @@
 @import 'base';
-@import 'vueBundle';
 @import 'autoimport';
-
-.page-list{
-    min-height: 100vh;
-    @include d-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h3{
-        margin: 30px;
-    }
-    ul{
-        list-style: none;
-    }
-}
-
-
-
-

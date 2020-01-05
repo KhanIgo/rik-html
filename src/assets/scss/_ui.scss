@@ -5,97 +5,7 @@ button {
     text-decoration: none;
 }
 
-.btn {
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-//    text-transform: uppercase;
-    padding: 0.75em 1.5em;
-    overflow: hidden;
-    &_red{
-        color: white;
-        background-color: $cRed;
-        border: solid 1px $cRed;
-        
-        @include white-hover;
-    }
-    &_beige{
-        color: white;
-        background-color: $cPeaches;
-        border: solid 1px $cPeaches;
-        
-        @include white-hover;
-    }
-    &_blue {
-        color: white;
-        padding: 0.75em 1.1em;
-        border-radius: 2em;
-        //        border: solid 1px currentColor;
-    }
-    &_green {
-        color: white;
-        padding: 0.75em 1.1em;
-        border-radius: 2em;
-        //        border: solid 1px currentColor;
-    }
-    &_white {
-        background-color: white;
-        color: $cRed;
-        padding: 0.75em 1.1em;
-//        border-radius: 2em;
-        border: solid 1px white;
-        &:hover{
-            border: solid 1px $cRed;
-        }
-    }
-    
-    &_bordered {
-        padding: 0.75em 1.1em;
-        border-radius: 2em;
-        border: solid 1px currentColor;
-    }
-    &_brd-white{
-        border: solid 1px white;
-    }
-    &_brd-red{
-        color: $cRed;
-        border: solid 1px $cRed;
-        
-        @include red-hover;
-    }
-    &_video {
-        display: block;
-        width: 53px;
-        height: 53px;
-        background-color: white;
-        @include mask-image('../img/video-btn.svg');
-    }
-    &_wide {
-        padding: 0.75em 2em;
-    }
-    &_fw {
-        width: 100%;
-        text-align: center;
-    }
-    &_c-black{
-        color: black;
-    }
-    &_full-width{
-        width: 100%;
-        text-align: center;
-    }
-  &_del{
-    width: 13px;
-    height: 14px;
-    color: inherit;
-    background-color: currentColor;
-    @include mask-image('../img/icon-cart-del.svg');
-    &:hover{
-      color: red;
-    }
-  }
-}
+
 
 .input {
     font-size: 1em;
@@ -103,7 +13,7 @@ button {
     outline: 0;
 
     &_type-text {
-        border: solid 1px $cRedBorder;
+        border: solid 1px;
     }
     &_type-textarea{
         resize: none;
@@ -243,7 +153,7 @@ i{
             @include mask-size('contain');
             @include mask-position('center');
             @include mask-repeat('no-repeat');
-            background-color: $cRed3;
+            //background-color: $cRed3;
             margin-left: 15px;
             transition: 350ms ease-in-out;
             &_is-active{

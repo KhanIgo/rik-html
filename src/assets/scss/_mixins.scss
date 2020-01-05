@@ -1,9 +1,47 @@
 //@mixin mixin-name() {}
 
-@mixin grad{}
+@mixin grad-vert{
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNDU4ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI0NmJiNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
+    background-image: -moz-linear-gradient(bottom, #00458f 0%, #246bb6 100%);
+    background-image: -o-linear-gradient(bottom, #00458f 0%, #246bb6 100%);
+    background-image: -webkit-linear-gradient(bottom, #00458f 0%, #246bb6 100%);
+    background-image: linear-gradient(bottom, #00458f 0%, #246bb6 100%);
+}
+@mixin grad-vert-reverse{
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MC44ODc3MTY3NDIwODUyJSIgeTE9Ii0wLjg1NzI1ODA5MzAzOTkyJSIgeDI9IjQ5LjExMjI4MzI1NzkxNDglIiB5Mj0iMTAwLjg1NzI1ODA5MzA0JSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDQ1OGYiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTc5YmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
+    background-image: -moz-linear-gradient(269deg, #00458f 0%, #3579bf 100%);
+    background-image: -o-linear-gradient(269deg, #00458f 0%, #3579bf 100%);
+    background-image: -webkit-linear-gradient(269deg, #00458f 0%, #3579bf 100%);
+    background-image: linear-gradient(181deg, #00458f 0%, #3579bf 100%);
+}
+@mixin grad-hor{
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSItMC44NTcyNTgwOTMwMzk5MiUiIHkxPSI1MC44ODc3MTY3NDIwODUxJSIgeDI9IjEwMC44NTcyNTgwOTMwNCUiIHkyPSI0OS4xMTIyODMyNTc5MTQ5JSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDQ1OGYiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTc5YmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==); 
+    background-image: -webkit-linear-gradient(359deg, #00458f 0%, #3579bf 100%);
+    background-image: -o-linear-gradient(359deg, #00458f 0%, #3579bf 100%);
+    background-image: linear-gradient(89deg, #00458f 0%, #3579bf 100%);
+}
+@mixin grad-hor-reverse{
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSIxMDEuNjgzMDEzMTAwMDk5JSIgeTE9IjQ4LjE5NTE4OTQxMjg5MjUlIiB4Mj0iLTEuNjgzMDEzMTAwMDk4NzQlIiB5Mj0iNTEuODA0ODEwNTg3MTA3NSUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDA0NThmIiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMzU3OGJmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJ1cmwoI2hhdDApIiAvPgo8L3N2Zz4=);
+    background-image: -moz-linear-gradient(182deg, #00458f 0%, #3578bf 100%);
+    background-image: -o-linear-gradient(182deg, #00458f 0%, #3578bf 100%);
+    background-image: -webkit-linear-gradient(182deg, #00458f 0%, #3578bf 100%);
+    background-image: linear-gradient(268deg, #00458f 0%, #3578bf 100%);
+}
 
-
-
+@mixin shadow{
+    -moz-box-shadow: 4px 6px 18px rgba(0,0,0,.24);
+    -webkit-box-shadow: 4px 6px 18px rgba(0,0,0,.24);
+    box-shadow: 4px 6px 18px rgba(0,0,0,.24);
+}
 
 @mixin f-code {
     font-family: "Code Pro";
@@ -51,6 +89,12 @@
 @mixin mask-repeat($rep){
     -webkit-mask-repeat: $rep;
     mask-repeat: $rep;
+}
+@mixin mask-icon($img){
+    @include mask($img);
+    @include mask-pos(center);
+    @include mask-rep(no-repeat);
+    @include mask-size(contain);
 }
 
 
@@ -104,61 +148,3 @@
 }
 
 
-@mixin red-hover{
-    transition: 650ms ease-in-out;
-    &:before, &:after{
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        background-color: $cRed;
-        top: 0;
-        transition: 650ms ease-in-out;
-    }
-    &:before{
-        transform: skewX(-45deg) translateX( -150% );
-    }
-    &:after{
-        transform: skewX(-45deg) translateX( 150% );
-    }
-    &:hover{
-        color: white;
-        &:before{
-            transform: skewX(-45deg) translateX( -55% );
-        }
-        &:after{
-            transform: skewX(-45deg) translateX( 40% );
-        }
-    }
-}
-@mixin white-hover{
-    transition: 650ms ease-in-out;
-    &:before, &:after{
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        top: 0;
-        transition: 650ms ease-in-out;
-    }
-    &:before{
-        transform: skewX(-45deg) translateX( -150% );
-    }
-    &:after{
-        transform: skewX(-45deg) translateX( 150% );
-    }
-    &:hover{
-        color: $cRed;
-        &:before{
-            transform: skewX(-45deg) translateX( -55% );
-        }
-        &:after{
-            transform: skewX(-45deg) translateX( 40% );
-        }
-    }
-}

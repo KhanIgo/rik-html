@@ -1,0 +1,45 @@
+body{
+    cursor: none;
+}
+.c-nav {
+    &__list {
+        display: flex;
+        font-size: 1.5em;
+        list-style: none;
+        font-family: 'BebasNeue';
+        letter-spacing: 0.075em;
+        
+    }
+    &__item {
+        margin: 0 10px;
+    }
+    &__link{
+        display: block;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.35s ease; //ease-in-out;
+        cursor: none;
+        
+        span{
+            display: inline-block;
+            pointer-events: none;
+            transition: transform 0.25s ease-in-out;
+        }
+        
+    }
+}
+
+.cursor{
+    pointer-events: none;
+    position: fixed;
+    z-index: 45;
+    padding: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.25s ease;
+    &.is-hover{
+        transform: translate(-50%, -50%) scale(8);
+    }
+}

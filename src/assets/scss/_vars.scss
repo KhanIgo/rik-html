@@ -1,13 +1,12 @@
+$cPrimary: rgba(0, 51, 153, 1);
+$cSecondary: rgba(255, 33, 33, 1);
+$cText: rgba(0, 0, 0, 1);
+$cLink: rgba(0, 0, 0, 1);
+
+
 $cGrey: #333;
 $greyL: rgba(244, 248, 246, 1);
 $greyL-2: rgba(220, 219, 216, 1);
-$cRed: rgba(99, 28, 24, 1);
-$cRed2: rgba(170, 0, 0, 1);
-$cRed3: rgba(101, 30, 26, 1);
-$cRedBorder: rgba( 121, 38, 33, 1);
-
-$cPeaches:rgba(250, 185, 157, 1);
-$cBeige:rgba(250, 185, 157, 1);
-
 $breadcrumbsColor: rgba(128, 128, 128, 1);
 
+@import 'vars-ext';

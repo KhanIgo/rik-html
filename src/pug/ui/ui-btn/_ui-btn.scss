@@ -1,0 +1,105 @@
+button {
+    outline: none;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@mixin btn-hover($color){
+    transition: 650ms ease-in-out;
+    &:before, &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-color: #{$color};
+        top: 0;
+        transition: 650ms ease-in-out;
+    }
+    &:before{
+        transform: skewX(-45deg) translateX( -150% );
+    }
+    &:after{
+        transform: skewX(-45deg) translateX( 150% );
+    }
+    &:hover{
+        &:before{
+            transform: skewX(-45deg) translateX( -55% );
+        }
+        &:after{
+            transform: skewX(-45deg) translateX( 40% );
+        }
+    }
+}
+@mixin red-hover{
+    @include btn-hover($cSecondary);
+}
+@mixin white-hover{
+    @include btn-hover(white);
+}
+
+@mixin btn{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 0.75em 1.5em;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.btn {
+    @include btn;
+    
+    &_primary{}
+    &_secondary{}
+    &_stroked{}
+    &_stroked-red{}
+    &_stroked-blue{}
+    &_shadow{}
+
+    
+    &_video {
+        display: block; width: 53px; height: 53px; background-color: white; @include mask-image('../img/video-btn.svg');
+    }
+    &_wide {
+        padding: 0.75em 2em;
+    }
+    &_full-width, &_fw {
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+  &_del{
+    width: 13px;
+    height: 14px;
+    color: inherit;
+    background-color: currentColor;
+    @include mask-image('../img/icon-cart-del.svg');
+    &:hover{
+      color: red;
+    }
+  }
+}
+
+
+
+i{
+    &.tr-down{
+        @include mask('../img/triangle-down.svg');
+        @include mask-size(cover);
+        @include mask-position(center);
+        @include mask-repeat(no-repeat);
+        background-color: currentColor;
+        width: 20px;
+        height: 10px;
+        display: inline-block;
+        margin-right: 5px;
+        
+    }
+}
+
+
+
