@@ -16,6 +16,10 @@
         width: 125px;
         @include mask('../img/ui-icon/worker.png');
     }
+    &_new-worker{
+        width: 125px;
+        @include mask('../img/ui-icon/new-worker.png');
+    }
     &_saw{
         @include mask('../img/ui-icon/saw-blade.png');
     }
@@ -26,4 +30,30 @@
     &_shipping{
         @include mask('../img/ui-icon/shipping-and-delivery.png');
     }
+    
+    &_box{
+        @include mask('../img/ui-icon/box.png');
+    }
+    &_finger{
+        @include mask('../img/ui-icon/finger.png');
+    }
+    &_russian{
+        @include mask('../img/ui-icon/russian.png');
+    }
+    &_warehouse{
+        @include mask('../img/ui-icon/warehouse.png');
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
