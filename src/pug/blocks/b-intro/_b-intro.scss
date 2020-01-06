@@ -1,0 +1,24 @@
+.b-intro {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/b-intro/bg.jpg');
+    
+    &__cnt {
+        @include ptb(100);
+    }
+    &__content {}
+    &__offer {
+        text-transform: uppercase;
+    }
+    &__desc {
+        font-size: 1.9em;
+        margin: 15px 0;
+    }
+    &__btn-wrpr {
+        font-size: 1.4em;
+        @include stroke(1px);
+        margin-top: 45px;
+    }
+    &__btn {}
+}
