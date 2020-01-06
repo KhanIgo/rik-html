@@ -63,7 +63,10 @@ button {
         background-color: $cSecondary;
     }
     &_stroked{}
-    &_stroked-red{}
+    &_stroked-red{
+        color: $cSecondary;
+        border: solid 0.15em currentColor;
+    }
     &_stroked-blue{}
     &_shadow{}
     &_big{

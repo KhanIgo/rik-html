@@ -15,7 +15,7 @@
             z-index: -1;
             left: 0;
             top: 0;
-            @include grad-vert;
+            @include grad-vert-reverse;
             @include mask('../img/b-advantages/shape-advantages.svg');
             @include mask-size(100% 100%);
             @include mask-rep(no-repeat);

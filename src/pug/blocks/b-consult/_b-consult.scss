@@ -1,0 +1,21 @@
+.b-consult {
+    padding: 40px 0;
+    &__cnt {
+        text-align: center;
+        &_1{
+            font-size: 2.25em;
+            font-weight: 800;
+        }
+        &_2{
+            margin-top: 45px;
+            font-size: 1.5em;
+            color: $cBlueDark;
+        }
+    }
+    &__btn{
+        font-size: 0.95em;
+        font-weight: 800;
+        padding-left: 0.7em !important;
+        padding-right: 0.7em !important;
+    }
+}
