@@ -87,11 +87,11 @@
     -webkit-mask-size: $size;
     mask-size: $size;
 }
-@mixin mask-position($pos){
+@mixin mask-pos($pos){
     -webkit-mask-position: $pos;
     mask-position: $pos;
 }
-@mixin mask-repeat($rep){
+@mixin mask-rep($rep){
     -webkit-mask-repeat: $rep;
     mask-repeat: $rep;
 }
@@ -146,10 +146,20 @@
     margin-bottom: #{$mar}px;
 }
 
+@mixin mlr($mar){
+    margin-left: #{$mar}px;
+    margin-right: #{$mar}px;
+}
+
 //Paddings top ans bottom
 @mixin ptb($pad) {
     padding-top: #{$pad}px;
     padding-bottom: #{$pad}px;
 }
+@mixin plr($pad){
+    padding-left: #{$pad}px;
+    padding-right: #{$pad}px;
+}
+
 
 

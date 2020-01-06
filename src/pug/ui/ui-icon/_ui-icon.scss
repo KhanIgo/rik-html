@@ -1,0 +1,29 @@
+.ui-icon {
+    display: block;
+    width: 120px;
+    height: 150px;
+    
+    @include mask-size(contain);
+    @include mask-pos(center top);
+    @include mask-rep(no-repeat);
+    background-color: #fff;
+    
+    &_monitoring{
+        width: 115px;
+        @include mask('../img/ui-icon/monitoring.png');
+    }
+    &_worker{
+        width: 125px;
+        @include mask('../img/ui-icon/worker.png');
+    }
+    &_saw{
+        @include mask('../img/ui-icon/saw-blade.png');
+    }
+    &_rack{
+        width: 105px;
+        @include mask('../img/ui-icon/rack.png');
+    }
+    &_shipping{
+        @include mask('../img/ui-icon/shipping-and-delivery.png');
+    }
+}

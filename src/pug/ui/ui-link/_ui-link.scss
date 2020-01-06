@@ -20,8 +20,8 @@
         margin-right: 0.7em;
         background-color: currentColor;
         @include mask-size(contain);
-        @include mask-repeat(no-repeat);
-        @include mask-position(center);
+        @include mask-rep(no-repeat);
+        @include mask-pos(center);
     }
     span{
         position: relative;

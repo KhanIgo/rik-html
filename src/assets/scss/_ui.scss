@@ -54,8 +54,8 @@ i{
     &.tr-down{
         @include mask('../img/triangle-down.svg');
         @include mask-size(cover);
-        @include mask-position(center);
-        @include mask-repeat(no-repeat);
+        @include mask-pos(center);
+        @include mask-rep(no-repeat);
         background-color: currentColor;
         width: 20px;
         height: 10px;
@@ -151,8 +151,8 @@ i{
             height: 20px;
             @include mask('../img/plus.svg');
             @include mask-size('contain');
-            @include mask-position('center');
-            @include mask-repeat('no-repeat');
+            @include mask-pos('center');
+            @include mask-rep('no-repeat');
             //background-color: $cRed3;
             margin-left: 15px;
             transition: 350ms ease-in-out;
