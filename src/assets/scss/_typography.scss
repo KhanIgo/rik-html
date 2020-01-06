@@ -139,3 +139,38 @@ span.spacer{
 .fz_2-9{ font-size: 2.9em; }
 .fz_2-95{ font-size: 2.95em; }
 .fz_3{ font-size: 3em; }
+
+
+
+.t-title-shape{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+    @include flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 20px 50px 10px;
+
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: calc( 1200px + ( 50vw - 600px ) );
+        height: 100%;
+        
+        @include mask('../img/title-shape.svg');
+        @include mask-pos(center);
+        @include mask-rep(no-repeat);
+        @include mask-size(100% 100% );
+        transform: translateX(3.5%);
+        @include grad-hor;
+    }
+}
