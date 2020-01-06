@@ -3,7 +3,7 @@
     .hamburger-inner
 
 +b.HEADER.c-header.row
-    +e.cnt.cnt
+    +e.cnt.cnt_wide
         +e.logo
             include ../c-logo-link/c-logo-link
             
@@ -11,7 +11,8 @@
             include ../c-nav/c-nav
         
         +e.contacts
-            include ../../ui/ui-link/ui-link_phone
+            +e.A(href="#").phone-link +7 (495) 123-4567
+            // include ../../ui/ui-link/ui-link_phone
             
     
     

@@ -109,7 +109,7 @@
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
-    display: flex;
+    @include flex;
     flex-wrap: wrap;
     &_wide{
         max-width: 1600px;

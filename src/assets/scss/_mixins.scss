@@ -43,6 +43,11 @@
     box-shadow: 4px 6px 18px rgba(0,0,0,.24);
 }
 
+@mixin stroke($str){
+    -webkit-text-stroke-width: $str;
+    -webkit-text-stroke-color: inherit;
+}
+
 @mixin f-code {
     font-family: "Code Pro";
 }
@@ -55,7 +60,7 @@
     font-family: "Times";
 }
 
-@mixin d-flex {
+@mixin flex {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;

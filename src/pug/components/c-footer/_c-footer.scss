@@ -9,10 +9,10 @@ $cFooterBg: rgba(65, 65, 65, 1);
         text-align: center;
     }
     &__cnt {
-        @include d-flex;
+        @include flex;
         align-items: center;
         justify-content: space-between;
-        @include ptb(35);
+        @include ptb(40);
         
         @media (max-width: 700px){
             flex-direction: column;
@@ -21,26 +21,9 @@ $cFooterBg: rgba(65, 65, 65, 1);
         }
     }
     &__copyrights {
-        margin-right: 10px;
         color: white;
-        font-size: 0.85em;
-        @media (max-width: 700px){
-            font-size: 1em;
-            margin-bottom: 15px;
-        }
-        &_has-no-phone{
-            width: 100%;
-            text-align: center;
-        }
+        text-transform: uppercase;
     }
     
-    &__phone-link {
-        margin-left: 10px;
-        font-size: 1.5em;
-        font-weight: 500;
-        @media (max-width: 700px){
-            margin-top: 15px;
-        }
-    }
     
 }

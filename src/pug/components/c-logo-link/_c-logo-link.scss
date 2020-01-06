@@ -1,0 +1,27 @@
+.c-logo-link {
+    @include flex;
+    align-items: center;
+    text-decoration: none;    
+    
+    &__logo-img {
+        display: block;
+        width: 239px;
+        height: 67px;
+        background-repeat: no-repeat ;
+        background-size: contain;
+        background-image: url('../img/c-logo-link/logo.png');
+        
+    }
+    &__slogan {
+        color: $cPrimary;
+        @include f-times;
+        text-transform: uppercase;
+        line-height: 0.9em;
+        display: block;
+        font-size: 0.95em;
+        margin-top: 2px;
+        margin-left: 10px;
+    }
+    br {
+    }
+}

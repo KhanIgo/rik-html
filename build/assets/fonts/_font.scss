@@ -17,8 +17,8 @@
 // FONT DIN NEXT CYR BEGIN
 $isWoff: true;
 $isTtf: true;
-$fontPath: '/assets/fonts/DIN-next-cyr-reg';
+$fontPath: '../fonts/DIN-next-cyr-reg';
 @include font('DIN Next Cyr', 400, 'normal', 'DIN-next-cyr-reg', $fontPath);
-$fontPath: '/assets/fonts/DIN-next-cyr-bold';
+$fontPath: '../fonts/DIN-next-cyr-bold';
 @include font('DIN Next Cyr', 800, 'normal', 'DIN-next-cyr-bold', $fontPath);
 // FONT DIN NEXT CYR END

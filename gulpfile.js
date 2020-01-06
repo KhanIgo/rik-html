@@ -91,7 +91,7 @@ gulp.task('copy:img', function (done) {
       }))
     .pipe(gulp.dest(imagesPath)).pipe(stream());
     
-    var assetsImagesPath = 'build/assets/images/';
+    var assetsImagesPath = 'build/assets/img/';
     gulp.src(['src/pug/components/**/assets/**/*.*', 'src/pug/blocks/**/assets/**/*.*', 'src/pug/ui/**/assets/**/*.*'])
     .pipe(rename(function (file) {
           file.dirname = path.dirname(file.dirname);
@@ -146,6 +146,7 @@ gulp.task('watchers', function (done) {
     gulp.watch('src/assets/js/**/*.js', gulp.series('copy:js'));
     gulp.watch('src/assets/img/**/*.*', gulp.series('copy:img'));
     gulp.watch('src/images/**/*.*', gulp.series('copy:img'));
+//    gulp.watch( ['src/assets/img/**/*.*', 'src/images/**/*.*', 'src/pug/components/**/images/**/*.*', 'src/pug/blocks/**/images/**/*.*', 'src/pug/ui/**/images/**/*.*', 'src/pug/components/**/images/**/*.*', 'src/pug/blocks/**/images/**/*.*', 'src/pug/ui/**/images/**/*.*'], gulp.series('copy:img'));
     gulp.watch('src/assets/fonts/**/*.*', gulp.series('copy:fonts'));
     gulp.watch('src/assets/libs/**/*.*', gulp.series('importLibs'));
     gulp.watch('src/pug/**/*.js', gulp.series('importJsBlocks'));
