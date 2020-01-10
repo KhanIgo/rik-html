@@ -184,9 +184,8 @@ span.spacer{
     &_left{
         &:after{
             left: auto;
-            width: calc( 1200px + ( 50vw - 600px ) );
             right: 0;
-            @include grad-hor_reverse;
+            width: calc( 1200px + ( 50vw - 600px ) );
             transform: skewX($skew) translateX(-3%);
             border-radius: 0 $skewBr $skewBr 0 ;
         }
