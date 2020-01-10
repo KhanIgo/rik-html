@@ -1,7 +1,17 @@
+$gutter: 10px;
+$cntMaxWidth: 1200px;
+$cntWideMaxWidth: 1600px;
+
+*{
+    box-sizing: border-box;
+}
 body{
     overflow-x: hidden;
     
     padding-bottom: 500px;
+}
+img{
+    max-width: 100%;
 }
 .to-left {
     justify-content: flex-start
@@ -10,10 +20,20 @@ body{
 .to-right {
     justify-content: flex-end;
 }
+.self-to-right{
+    margin-left: auto;
+}
+.self-to-left{
+    margin-right: auto;
+}
 .to-center{
     justify-content: center;
 }
 
+.gr-grow{
+    flex-grow: 100;
+}
+.shrink
 
 .pl_0 {
     padding-left: 0;
@@ -82,42 +102,104 @@ body{
     }
 }
 @mixin grid-item($width, $paddings){
-    flex: #{$width} 0 0;
+//    flex: #{$width} 0 0;
+    flex-basis: #{$width};
+    flex-shrink: 0;
     padding-left: #{$paddings};
     padding-right: #{$paddings};
 }
 
+@mixin offset($suffix){
+    @include offset-item($suffix, 0);
+    @include offset-item($suffix, 1);
+    @include offset-item($suffix, 2);
+    @include offset-item($suffix, 3);
+    
+}
+@mixin offset-item($suffix, $cols){
+    .ml-col-#{$cols}_#{$suffix}{
+        margin-left: 8.33%*$cols;
+    }
+    .-ml-col-#{$cols}_#{$suffix}{
+        margin-left: -8.33%*$cols;
+    }
+    .mr-col-#{$cols}_#{$suffix}{
+        margin-right: 8.33%*$cols;;
+    }
+    .-mr-col-#{$cols}_#{$suffix}{
+        margin-right: -8.33%*$cols;;
+    }
+}
+
+@mixin offset-to-win-border-in-big($suffix){
+    .to-left-border_#{$suffix}{
+        margin-left: calc( ( #{$cntMaxWidth} / 2 ) - 50vw - #{$gutter} );
+    }
+    .to-right-border_#{$suffix}{
+        margin-right: calc( ( #{$cntMaxWidth} / 2 ) - 50vw - #{$gutter} );
+    }
+    
+    .to-left-border-wide_#{$suffix}{
+        margin-left: calc( ( #{$cntWideMaxWidth} / 2 ) - 50vw - #{$gutter} );
+    }
+    .to-right-border-wide_#{$suffix}{
+        margin-right: calc( ( #{$cntWideMaxWidth} / 2 ) - 50vw - #{$gutter} );
+    }
+}
+@mixin offset-to-win-border-in-sml($suffix){
+    .to-left-border_#{$suffix}{
+        margin-left: -#{$gutter};
+    }
+    .to-right-border_#{$suffix}{
+        margin-rigth: -#{$gutter};
+    }
+}
+
 @include grid('col', 'xs', '10px');
+@include offset('xs');
 @media (min-width: 480px) {
-    @include grid('col', 'sm', '10px');
+    @include grid('col', 'sm', $gutter);
+    @include offset('sm');
+    @include offset-to-win-border-in-sml('sm');
 }
 @media (min-width: 750px) {
-    @include grid('col', 'md', '10px');
+    @include grid('col', 'md', $gutter);
+    @include offset('md');
+    @include offset-to-win-border-in-sml('md');
 }
 @media (min-width: 980px) {
-    @include grid('col', 'lg', '10px');
+    @include grid('col', 'lg', $gutter);
+    @include offset('lg');
+    @include offset-to-win-border-in-sml('lg');
 }
 @media (min-width: 1200px) {
-    @include grid('col', 'xl', '10px');
+    @include grid('col', 'xl', $gutter);
+    @include offset('xl');
+    @include offset-to-win-border-in-big('xl');
 }
 @media (min-width: 1800px) {
-    @include grid('col', 'xxl', '10px');
+    @include grid('col', 'xxl', $gutter);
+    @include offset('xxl');
+    @include offset-to-win-border-in-big('xxl');
 }
+
+
+//.-ml-col-1_lg{ margin-left: -8.33%; }
 
 .row{
     width: 100%;
 }
 .container, .cnt{
     width: 100%;
-    max-width: 1200px;
+    max-width: $cntMaxWidth;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: $gutter;
+    padding-right: $gutter;
     @include flex;
     flex-wrap: wrap;
     &_wide{
-        max-width: 1600px;
+        max-width: $cntWideMaxWidth;
     }
     &_full{
         max-width: 100%;

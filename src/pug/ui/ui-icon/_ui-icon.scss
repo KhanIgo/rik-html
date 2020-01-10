@@ -30,7 +30,9 @@
     &_shipping{
         @include mask('../img/ui-icon/shipping-and-delivery.png');
     }
-    
+    &_diplom{
+        @include mask('../img/ui-icon/diplom.png');
+    }
     &_box{
         @include mask('../img/ui-icon/box.png');
     }
@@ -43,7 +45,9 @@
     &_warehouse{
         @include mask('../img/ui-icon/warehouse.png');
     }
-    
+    &_wholesaler{
+        @include mask('../img/ui-icon/wholesaler.png');
+    }
 }
 
 

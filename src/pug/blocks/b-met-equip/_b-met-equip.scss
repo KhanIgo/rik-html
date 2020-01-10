@@ -1,0 +1,32 @@
+.b-met-equip {
+    &__cnt {
+    }
+    &__title {
+        text-align: center;
+    }
+    
+    &__desc {
+        text-align: center;
+    }
+    &__items {
+        @include flex;
+        justify-content: space-between;
+    }
+}
+
+.b-met-equip-item {
+    flex: 33.33% 0 0;
+//    flex-basis: 33.33%
+        
+    @include flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    &__img-wrpr {
+    }
+    &__img {
+    }
+    &__desc {
+        text-align: center;
+    }
+}

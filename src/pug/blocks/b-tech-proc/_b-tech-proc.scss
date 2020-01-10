@@ -1,0 +1,15 @@
+.b-tech-proc {
+    
+    &__cnt {
+        &_title{
+        }
+        &_data{}
+    }
+    &__title {}
+    
+    &__img-wrpr {
+        width: calc( 540px + ( 50vw - 600px ) );
+    }
+    &__img {}
+    &__desc{}
+}

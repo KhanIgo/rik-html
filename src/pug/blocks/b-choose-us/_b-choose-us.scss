@@ -1,0 +1,25 @@
+.b-choose-us {
+    
+    &__cnt {}
+    &__title {}
+    
+    &__items {
+        @include flex;
+        justify-content: center;
+    }
+}
+.b-choose-us-item {
+    width: 450px;
+    height: 90px;
+    margin: 10px;
+    &__img-wrpr {
+        width: 100%;
+        height: 100%;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+}
