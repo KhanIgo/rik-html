@@ -188,7 +188,7 @@ span.spacer{
             right: 0;
             @include grad-hor_reverse;
             transform: skewX($skew) translateX(-3%);
-            border-radius: 0 $skewBr $skewBr 0;
+            border-radius: 0 $skewBr $skewBr 0 ;
         }
     }
 }
