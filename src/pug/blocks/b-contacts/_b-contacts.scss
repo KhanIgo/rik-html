@@ -1,5 +1,13 @@
 .b-contacts {
     margin-top: 60px;
+    a{
+        color: inherit;
+        text-decoration: none;
+        position: relative;
+        @include hover-underline;
+        @include ba-bottom(0);
+        @include ba-height(1px);
+    }
     &__cnt {
         text-align: left;
         padding: 0;
@@ -15,10 +23,5 @@
         &_3{
             text-transform: lowercase;
         }
-    }
-    
-    a {
-        color: inherit;
-//        text-transform: uppercase;
     }
 }

@@ -14,7 +14,7 @@
     }
 }
 
-@mixin hover-inderline{
+@mixin hover-underline{
     &:after, &:before{
         content: '';
         position: absolute;

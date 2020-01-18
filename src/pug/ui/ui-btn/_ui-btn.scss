@@ -51,6 +51,11 @@ button {
     overflow: hidden;
     z-index: 2;
     white-space: nowrap;
+    
+    -moz-box-shadow: 4px 6px 18px rgba(0,0,0,.24);
+    -webkit-box-shadow: 4px 6px 18px rgba(0,0,0,.24);
+    box-shadow: 4px 6px 18px rgba(0,0,0,.24);
+    
     font-size: 0.95em;
 //    font-size: 0.67em;
 }

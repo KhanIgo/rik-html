@@ -48,7 +48,7 @@
         color: white;
         text-decoration: none;   
         position: relative;
-        @include hover-inderline;
+        @include hover-underline;
         @include ba-bottom(1px);
     }
     
