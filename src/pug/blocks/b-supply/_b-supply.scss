@@ -1,6 +1,7 @@
 .b-supply {
     position: relative;
     z-index: 2;
+    margin-top: 25px;
     &__title {
         &.t-title-shape{}
     }
@@ -17,7 +18,7 @@
     
     &__desc {
         text-align: center;
-        font-size: 1.5em;
+//        font-size: 1.5em;
     }
     
     &__items {

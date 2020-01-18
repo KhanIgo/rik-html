@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>Главная</title>
     <!--    link(rel='stylesheet', href='assets/libs/owlcarousel-2.3.4/assets/owl.carousel.css')-->
-    <link rel="stylesheet" href="assets/css/libsBundle.css?cache=1578644677206">
-    <link rel="stylesheet" href="assets/css/style.css?cache=1578644677206">
+    <link rel="stylesheet" href="assets/css/libsBundle.css?cache=1579312513351">
+    <link rel="stylesheet" href="assets/css/style.css?cache=1579312513351">
   </head>
   <body>
     <!--.hamburger.hamburger--stand.js-hamburger
@@ -41,7 +41,7 @@
       </div>
     </header>
     <section class="b-intro row">
-      <div class="b-intro__bg">
+      <div class="b-intro__bg"><img class="b-intro__bg-img" src="/images/b-intro/bg.jpg" alt="" role="presentation"/>
       </div>
       <div class="b-intro__cnt cnt">
         <div class="b-intro__content col-9 col-9_md">
@@ -56,6 +56,8 @@
       </div>
     </section>
     <section class="b-service">
+      <div class="b-service__bg"><img class="b-service__bg-img" src="/images/b-service/bg.jpg" alt="" role="presentation"/>
+      </div>
       <div class="b-service__cnt cnt">
         <h2 class="b-service__title ucase col-12 col-12_xs">Наши услуги
         </h2>
@@ -190,22 +192,24 @@
       </div>
       <div class="b-consult__cnt b-consult__cnt_2 cnt t-light-blue-content t-light-blue-content_left">
         <p>Проводим анализ используемой на предприятии <br>номенклатуры инструмента и предлагаем варианты её унификации</p>
-        <p><a class="b-consult__btn ui-btn ui-btn_stroked-red" href="#">получить консультацию</a>
+        <p><a class="b-consult__btn ui-btn ui-btn_stroked-red ui-btn_shadow" href="#">получить консультацию</a>
         </p>
       </div>
     </section>
-    <div class="b-rus-brand row">
+    <section class="b-rus-brand row">
       <div class="b-rus-brand__cnt cnt">
-        <div class="b-rus-brand__img-wrpr col-6 col-6_lg -ml-col-1 -ml-col-1_lg"><img class="b-rus-brand__img" src="/images/b-rus-brand/gambar.jpg" alt="" role="presentation"/>
+        <div class="b-rus-brand__img-wrpr col-7 col-7_lg -ml-col-1 -ml-col-1_lg"><img class="b-rus-brand__img" src="/images/b-rus-brand/gambar.jpg" alt="" role="presentation"/>
         </div>
         <div class="b-rus-brand__text col-6 col-6_lg gr-grow">
           <h4 class="ucase t-blue">отечественный бренд</h4>
           <h5>MRT - российский производитель <br>инструмента </h5>
-          <p>C 2014 года мы являемся официальным дистрибьютором российского производителя инструмента под торговой маркой MRT. Производство имеет подтверждающий сертификат Минпромторга РФ. </p>
-          <p>Изготавливается как осевой, так и сборный инструмент. Высокое качество инструмента позволяет применять его при обработке жаропрочных и титановых сплавов. </p>
+          <div class="b-rus-brand__desc t-hor-line">
+            <p>C 2014 года мы являемся официальным дистрибьютором российского производителя инструмента под торговой маркой MRT. Производство имеет подтверждающий сертификат Минпромторга РФ. </p>
+            <p>Изготавливается как осевой, так и сборный инструмент. Высокое качество инструмента позволяет применять его при обработке жаропрочных и титановых сплавов.</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <section class="b-spec-instr row">
       <div class="b-spec-instr__cnt b-spec-instr__cnt_title cnt">
         <div class="b-spec-instr__title t-title-shape t-title-shape t-title-shape_left">
@@ -214,13 +218,16 @@
       </div>
       <div class="b-spec-instr__cnt b-spec-instr__cnt_data cnt cnt_plan">
         <div class="cnt-plan__bg"></div>
-        <div class="col-12_xs">
-          <p>Мы можем изготовить специальный твердосплавный или корпусной инструмент по Вашим чертежам или сконструировать его для вас</p>
+        <div class="b-spec-instr__desc-strong col-12 col-12_xs col-10 col-10_lg">
+          <p>Мы можем изготовить специальный твердосплавный <br>или корпусной инструмент по Вашим чертежам <br>или сконструировать его для вас</p>
         </div>
-        <div class="col-5_lg">
-          <p>Данная программа позволяет решить задачу комплексного импортозамещения инструментальной номенклатуры на механообрабатывающем производстве</p>
+        <div class="b-spec-instr__desc-act">
+          <div class="b-spec-instr__desc col-5 col-5_lg">
+            <p>Данная программа позволяет решить задачу комплексного импортозамещения инструментальной номенклатуры на механообрабатывающем производстве</p>
+          </div>
+          <div class="col-7_lg action"><a class="ui-btn ui-btn_stroked-white ui-btn_bigger" href="#">заказать изготовление</a>
+          </div>
         </div>
-        <div class="col-7_lg action"><a href="#">заказать изготовление</a></div>
       </div>
     </section>
     <section class="b-tech-proc row">
@@ -233,13 +240,14 @@
         <div class="b-tech-proc__img-wrpr to-left-border to-left-border_xl"><img class="b-tech-proc__img" src="/images/b-tech-proc/gambar.jpg" alt="" role="presentation"/>
         </div>
         <div class="b-tech-proc__desc col-6 col-6_lg self-to-right">
-          <h6>Экономим Ваше время <br>на обработку деталей</h6>
+          <h5>Экономим Ваше время <br>на обработку деталей d</h5>
           <p>Русская инжиниринговая компания осуществляет разработку современных технологических процессов, написание управляющих программ (и постпроцессоров, если требуется), позволяющих существенно сократить время обработки деталей.</p>
-          <p> <a href="#">Заказать разработку</a></p>
+          <p> <a class="b-tech-proc__btn ui-btn ui-btn_shadow ui-btn_red-stroke-white" href="#">Заказать разработку</a>
+          </p>
         </div>
       </div>
-      <div class="b-tech-proc__cnt-text cnt">
-        <p>Имеем уникальное предложение на рынке: перед сдачей заказчику, всегда проводим предварительную обработку технологических процессов в собственном технологическом центре, который оснащен современными трех, четырех и пяти координатными станками с ЧПУ. </p>
+      <div class="b-tech-proc__cnt-text cnt cnt_vertical-blue">
+        <p class="t-blue">Имеем уникальное предложение на рынке: перед сдачей заказчику, всегда проводим предварительную обработку технологических процессов в собственном технологическом центре, который оснащен современными трех, четырех и пяти координатными станками с ЧПУ. </p>
         <p>Это позволяет не отвлекать оборудование Заказчика для наладки технологического процесса и быть уверенным в результатах приобретаемой технологии</p>
       </div>
     </section>
@@ -250,15 +258,16 @@
         </div>
       </div>
       <div class="b-prom-furniture__cnt b-prom-furniture__cnt_data cnt">
-        <div class="col-5_lg ml-col-1_lg">
-          <h6>Оснащаем производство <br>специализированной мебелью</h6>
+        <div class="b-prom-furniture__text col-5 col-5_lg ml-col-1 ml-col-1_lg">
+          <h5>Оснащаем производство <br>специализированной мебелью</h5>
           <p>Для оснащения производств предлагаем высококачественную мебель производства СТМ-К (г. Ковров). В разработку входит:</p>
           <ul> 
             <li>Трехмерная визуализация </li>
             <li>Комплексное проектирование любых помещениий на производстве: от гардероба до крупного цеха </li>
             <li>Подбор оптимальной комплектации мебели и проект расстановки</li>
           </ul>
-          <p> <a href="#">Заказать проект</a></p>
+          <p> <br><a class="b-prom-furniture__btn ui-btn ui-btn_shadow ui-btn_red-stroke-white" href="#">Заказать проект</a>
+          </p>
         </div>
         <div class="b-prom-furniture__img-wrpr self-to-right to-right-border to-right-border_xl"><img class="b-prom-furniture__img" src="/images/b-prom-furniture/photo.jpg" alt="" role="presentation"/>
         </div>
@@ -280,54 +289,54 @@
               <p>Вертикально-фрезерный центр 3+1 QUASER MV184P</p>
             </div>
           </div>
-          <div class="met-equip-item met-equip-item_2">
-            <div class="met-equip-item__img-wrpr"><img class="met-equip-item__img" src="/images/b-met-equip/2.jpg" alt="" role="presentation"/>
+          <div class="b-met-equip-item b-met-equip-item_2">
+            <div class="b-met-equip-item__img-wrpr"><img class="b-met-equip-item__img" src="/images/b-met-equip/2.jpg" alt="" role="presentation"/>
             </div>
-            <div class="met-equip-item__desc">
+            <div class="b-met-equip-item__desc">
               <p>Вертикально-фрезерный 3х координатный обраба-тывающий центр AKIRA V4</p>
             </div>
           </div>
-          <div class="met-equip-item met-equip-item_3">
-            <div class="met-equip-item__img-wrpr"><img class="met-equip-item__img" src="/images/b-met-equip/3.jpg" alt="" role="presentation"/>
+          <div class="b-met-equip-item b-met-equip-item_3">
+            <div class="b-met-equip-item__img-wrpr"><img class="b-met-equip-item__img" src="/images/b-met-equip/3.jpg" alt="" role="presentation"/>
             </div>
-            <div class="met-equip-item__desc">
+            <div class="b-met-equip-item__desc">
               <p>Токарно-фрезерный ОЦ  TS-4000YS TAKISAWA</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="b-advantages">
-      <div class="b-advantages__cnt cnt">
+    <section class="b-advantages b-advantages_mt0 b-advantages_2">
+      <div class="b-advantages__cnt b-advantages__cnt_2 cnt">
         <h3 class="b-advantages__title col-12 col-12_xs">Наши преимущества
         </h3>
         <div class="b-advantages__items">
-          <div class="b-advantages-item b-advantages-item_6 col-3 col-3_lg col-6 col-6_sm">
+          <div class="b-advantages-item b-advantages-item_6 col-6 col-6_sm">
             <div class="b-advantages-item__icon"><i class="ui-icon ui-icon_monitoring"></i>
             </div>
-            <div class="b-advantages-item__text">
+            <div class="b-advantages-item__text b-advantages-item__text_in-2">
               <p>Проводим <br>пусконаладочные <br>работы</p>
             </div>
           </div>
-          <div class="b-advantages-item b-advantages-item_7 col-3 col-3_lg col-6 col-6_sm">
+          <div class="b-advantages-item b-advantages-item_7 col-6 col-6_sm">
             <div class="b-advantages-item__icon"><i class="ui-icon ui-icon_new-worker"></i>
             </div>
-            <div class="b-advantages-item__text">
+            <div class="b-advantages-item__text b-advantages-item__text_in-2">
               <p>Имеем собственный штат квалифицированных специалистов</p>
             </div>
           </div>
-          <div class="b-advantages-item b-advantages-item_8 col-3 col-3_lg col-6 col-6_sm">
+          <div class="b-advantages-item b-advantages-item_8 col-6 col-6_sm">
             <div class="b-advantages-item__icon"><i class="ui-icon ui-icon_diplom"></i>
             </div>
-            <div class="b-advantages-item__text">
+            <div class="b-advantages-item__text b-advantages-item__text_in-2">
               <p>Предоставляем гарантийное <br>и постгарантийное обслуживание</p>
             </div>
           </div>
-          <div class="b-advantages-item b-advantages-item_9 col-3 col-3_lg col-6 col-6_sm">
+          <div class="b-advantages-item b-advantages-item_9 col-6 col-6_sm">
             <div class="b-advantages-item__icon"><i class="ui-icon ui-icon_wholesaler"></i>
             </div>
-            <div class="b-advantages-item__text">
-              <p>Осуществляем поставку комплектующих <br>и запчастей  l</p>
+            <div class="b-advantages-item__text b-advantages-item__text_in-2">
+              <p>Осуществляем поставку комплектующих <br>и запчастей</p>
             </div>
           </div>
         </div>
@@ -356,13 +365,13 @@
     </section>
     <section class="b-contacts row">
       <div class="b-contacts__cnt cnt t-light-blue-content">
-        <div class="b-contacts__title col-5 col-5_lg">
-          <h4 class="ucase">Наши контакты</h4>
+        <div class="b-contacts__col b-contacts__col_1 col-5 col-5_lg">
+          <h2 class="ucase">Наши контакты</h2>
         </div>
-        <div class="b-contacts__address col-5 col-5_lg">
+        <div class="b-contacts__col b-contacts__col_2 col-5 col-5_lg">
           <p>109004, г. Москва, переулок Тетеринский, <br>дом 4, строение 1, этаж 2, офис 215</p>
         </div>
-        <div class="b-contacts__contacts col-2 col-2_lg">
+        <div class="b-contacts__col b-contacts__col_3 col-2 col-2_lg">
           <p><a href="#">+7 (4957) 272-834 </a><br><a href="#">info@rictech.ru</a></p>
         </div>
       </div>
@@ -375,7 +384,7 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="assets/js/libsBundle.js?cache=1578644677250"></script>
+    <script src="assets/js/libsBundle.js?cache=1579312513379"></script>
     <!--script(src='assets/libs/underscore/underscore-min.js')-->
     <!--script(src='assets/libs/jquery/jquery-3.3.1.min.js')-->
     <!--script(src='assets/libs/owlcarousel-2.3.4/owl.carousel.js')-->
@@ -388,8 +397,8 @@
     <!--script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/EaselPlugin.min.js' )-->
     <!--script(src='assets/libs/mobile-detect/mobile-detect.min.js')-->
     <!--script(src='assets/js/responsive.js')-->
-    <script src="assets/js/main.js?cache=1578644677250"></script>
-    <script src="assets/js/blocks.js?cache=1578644677250"></script>
+    <script src="assets/js/main.js?cache=1579312513379"></script>
+    <script src="assets/js/blocks.js?cache=1579312513379"></script>
     <script>jQuery(function($) {});</script>
   </body>
 </html>

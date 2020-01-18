@@ -1,0 +1,24 @@
+.b-contacts {
+    margin-top: 60px;
+    &__cnt {
+        text-align: left;
+        padding: 0;
+    }
+    &__col{
+        flex-grow: 0;
+        padding: 0;
+        &_1{
+        }
+        &_2{
+            margin-left: -20px;
+        }
+        &_3{
+            text-transform: lowercase;
+        }
+    }
+    
+    a {
+        color: inherit;
+//        text-transform: uppercase;
+    }
+}

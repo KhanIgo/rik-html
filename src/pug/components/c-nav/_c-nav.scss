@@ -1,4 +1,5 @@
 .c-nav {
+    font-size: 0.67em;
     &__list {
         display: flex;
         list-style: none;
@@ -9,11 +10,12 @@
     }
     &__link{
         display: block;
+        position: relative;
         color: inherit;
         text-decoration: none;
         text-transform: uppercase;
         transition: all 0.35s ease; //ease-in-out;
         @include stroke(1px);
-        
+        @include hover-inderline;
     }
 }

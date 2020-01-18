@@ -1,4 +1,5 @@
 .b-met-equip {
+    margin-top: 200px;
     &__cnt {
     }
     &__title {
@@ -7,16 +8,17 @@
     
     &__desc {
         text-align: center;
+        margin-top: 35px;
     }
     &__items {
         @include flex;
         justify-content: space-between;
+        margin-top: 35px;
     }
 }
 
 .b-met-equip-item {
     flex: 33.33% 0 0;
-//    flex-basis: 33.33%
         
     @include flex;
     flex-direction: column;
@@ -28,5 +30,7 @@
     }
     &__desc {
         text-align: center;
+        margin-top: 10px;
+        padding: 20px;
     }
 }

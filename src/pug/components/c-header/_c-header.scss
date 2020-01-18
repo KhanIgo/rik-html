@@ -44,8 +44,12 @@
         
     }
     &__phone-link{
+        font-size: 0.67em;
         color: white;
-        text-decoration: none;    
+        text-decoration: none;   
+        position: relative;
+        @include hover-inderline;
+        @include ba-bottom(1px);
     }
     
     

@@ -3,8 +3,8 @@
         +e.title.t-title-shape.t-title-shape_left
             h2 изготовление промышленной #[br]мебели
     +e.cnt_data.cnt
-        .col-5_lg.ml-col-1_lg
-            h6 Оснащаем производство #[br]специализированной мебелью
+        +e.text.col-5_lg.ml-col-1_lg
+            h5 Оснащаем производство #[br]специализированной мебелью
             p Для оснащения производств предлагаем высококачественную мебель производства СТМ-К (г. Ковров). В разработку входит:
             
             ul  
@@ -13,7 +13,8 @@
                 li Подбор оптимальной комплектации мебели и проект расстановки
                 
             p 
-                a(href="#") Заказать проект
+                br
+                +e.A(href="#").btn.ui-btn._shadow._red-stroke-white Заказать проект
             
         +e.img-wrpr.self-to-right.to-right-border_xl
             +e.IMG(src='/images/b-prom-furniture/photo.jpg').img

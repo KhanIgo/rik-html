@@ -2,12 +2,6 @@ $gutter: 10px;
 $cntMaxWidth: 1200px;
 $cntWideMaxWidth: 1600px;
 
-*{
-    box-sizing: border-box;
-}
-body{
-    overflow-x: hidden;
-}
 img{
     max-width: 100%;
 }
@@ -116,16 +110,16 @@ img{
 }
 @mixin offset-item($suffix, $cols){
     .ml-col-#{$cols}_#{$suffix}{
-        margin-left: 8.33%*$cols;
+        margin-left: 8.3333%*$cols;
     }
     .-ml-col-#{$cols}_#{$suffix}{
-        margin-left: -8.33%*$cols;
+        margin-left: -8.3333%*$cols;
     }
     .mr-col-#{$cols}_#{$suffix}{
-        margin-right: 8.33%*$cols;;
+        margin-right: 8.3333%*$cols;
     }
     .-mr-col-#{$cols}_#{$suffix}{
-        margin-right: -8.33%*$cols;;
+        margin-right: -8.3333%*$cols;
     }
 }
 

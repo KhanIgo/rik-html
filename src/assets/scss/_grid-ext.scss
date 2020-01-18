@@ -3,11 +3,6 @@
     
     &_plan{
         position: relative;
-        
-        
-        height: 500px;
-        
-        
     }
     &-plan__bg{
         position: absolute;
@@ -39,13 +34,36 @@
         }
         
     }
+    
+    &_vertical-blue{
+        max-width: 1030px;
+        padding-left: 100px;
+        position: relative;
+        z-index: 3;
+        padding-top: 30px;
+        
+        &:before{
+            content: '';
+            position: absolute;
+            height: calc( 100% + 120px );
+            width: 60px;
+            left: 0;
+            top: -120px;
+            @include grad-vert;
+        }
+    }
+    
+    
 }
 
 .action{
     position: relative;
     padding: 10px 15% 10px;
-    min-height: 100px;
+    min-height: 115px;
     align-self: flex-start;
+    @include flex;
+    flex-wrap: wrap;
+    align-items: center;
     &:before{
         content: '';
         position: absolute;
@@ -69,7 +87,7 @@
         width: calc( 100% + ( 50vw - 600px ) );
         height: 100%;
         transform: skewX($skew) translateX(7%);
-        border-radius: $skewBr 0 0 $skewBr;
+        border-radius: 15px 0 0 15px;
         @include grad-hor;
     }
 }

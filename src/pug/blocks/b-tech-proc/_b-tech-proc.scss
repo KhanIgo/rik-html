@@ -1,9 +1,16 @@
 .b-tech-proc {
-    
+    margin-top: 150px;
     &__cnt {
-        &_title{
+        &-title{
+            position: relative;
+            z-index: 2;
         }
-        &_data{}
+        &-data{
+            position: relative;
+            z-index: 1;
+            margin-top: -115px;
+        }
+        &-text{}
     }
     &__title {}
     
@@ -11,5 +18,19 @@
         width: calc( 540px + ( 50vw - 600px ) );
     }
     &__img {}
-    &__desc{}
+    &__desc{
+        padding-top: 115px;
+        @include flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 65px;
+        p{
+            margin-top: 1em;
+            text-align: justify;
+        }
+    }
+    &__btn{
+        padding-left: 2em !important;
+        padding-right: 2em !important;
+    }
 }

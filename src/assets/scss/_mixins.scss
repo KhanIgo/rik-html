@@ -140,6 +140,18 @@
     object-position: center;
 }
 
+@mixin bg-div{
+    width: 100%;
+        height: 100%;
+        z-index: -1;
+        position: absolute;
+}
+@mixin bg-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 //margins top ans bottom
 @mixin mtb($mar) {
     margin-top: #{$mar}px;

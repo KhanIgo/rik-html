@@ -1,11 +1,12 @@
 .b-choose-us {
-    
+    margin-top: 85px;
     &__cnt {}
     &__title {}
     
     &__items {
         @include flex;
         justify-content: center;
+        margin-top: 60px;
     }
 }
 .b-choose-us-item {

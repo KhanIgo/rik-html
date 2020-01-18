@@ -1,41 +1,49 @@
-
-body{
-    font-family: "DIN Next Cyr" , Verdana;
-    
-    font-size: 16px;
-    letter-spacing: 0.01em;
-    color: $cText;
-}
 h1, h2, h3, h4, h5, h6{
 //  line-height: 1em;
 }
 h1{
-    font-size: 3.75em;
+    font-size: 2.5em;
 }
 h2{
-    font-size: 3em;
+    font-size: 2em;
     @media (max-width: 900px) {
-        font-size: 2em;
+        font-size: 1.33em;
     }
 }
 h3{
-    font-size: 2.35em;
+    font-size: 1.566em;
     @media (max-width: 900px) {
-        font-size: 1.6em;
+        font-size: 1.07em;
     }
 }
 h4{
-    font-size: 2.25em;
+    font-size: 1.5em;
 }
 h5{
-    font-size: 1.85em;
+    font-size: 1.23em;
 }
 h6{
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .t-blue{
     color: $cBlueDark;
+}
+.t-italic{
+    font-style: italic;
+}
+.t-hor-line{
+    position: relative;
+    padding-left: 105px;
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.5em;
+        width: 95px;
+        height: 2px;
+        background-color: #00458f;
+    }
 }
 
 .lite{
@@ -55,6 +63,31 @@ p{
         margin-bottom: 0;
     }
 }
+
+
+ul:not(.c-nav__list){
+    list-style: none;
+    @include flex;
+    flex-direction: column;
+    li{
+        position: relative;
+        padding-left: 60px;
+        margin-bottom: 1em; 
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5em;
+            height: 3px;
+            width: 40px;
+            background-color: $cPrimary;
+        }
+    }
+}
+
 span.spacer{
     display: inline-block;
     width: 100%;
@@ -147,6 +180,7 @@ span.spacer{
 
 
 
+
 .t-title-shape, .t-light-blue-content{
     position: relative;
     width: 100%;
@@ -204,6 +238,7 @@ span.spacer{
 } 
 .t-light-blue-content{
     padding: 40px;
+    color: $cText;
     &:after{
         background-image: none;
         background-color: $cBlueLight !important;

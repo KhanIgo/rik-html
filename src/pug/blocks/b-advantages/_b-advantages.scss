@@ -2,11 +2,15 @@
     position: relative;
     z-index: 1;
     margin-top: -55px;
+    &_mt0{
+        margin-top: 0;
+    }
+    &_2{
+        margin-top: 10px;
+    }
     &__cnt {
         position: relative;
-        padding-top: 95px;
-        padding-bottom: 85px;
-        
+        padding: 95px 0 85px;
         &:after{
             content: '';
             position: absolute;
@@ -16,13 +20,21 @@
             left: 0;
             top: 0;
             @include grad-vert-reverse;
-            @include mask('../img/b-advantages/shape-advantages.svg');
-            @include mask-size(100% 100%);
-            @include mask-rep(no-repeat);
-            @include mask-pos(center);
-            @media (min-width: 1350px) {
-                width: 1350px;
-                left: -50px;
+            transform: skewX( -15deg );
+            border-radius: 50px;
+            @media (min-width: 1400px) {
+                width: 1400px;
+                left: -100px;
+            }
+        }
+        
+        &_2{
+            padding-top: 40px;
+            padding-bottom: 20px;
+            
+            &:after{
+                transform: skewX( -18deg );
+                border-radius: $skewBr;
             }
         }
         
@@ -35,8 +47,8 @@
     }
     &__items {
         @include flex;
-        justify-content: center;
-        
+//        justify-content: center;
+        justify-content: space-between;
         // TODO убрать потом
         
     }
@@ -49,6 +61,24 @@
         flex-shrink: 0;
         flex-grow: 0;
         @include plr(0);
+        
+        
+        &_6{
+            width: 19%;
+            flex: 19% 0 0;
+        }
+        &_7{
+            width: 26%;
+            flex: 26% 0 0;
+        }
+        &_8{
+            width: 29%;
+            flex: 29% 0 0;
+        }
+        &_9{
+            width: 26%;
+            flex: 26% 0 0;
+        }
         
         &__icon {
             width: 100%;
@@ -74,10 +104,12 @@
         }
         &__text {
             width: 100%;
-            font-size: 1.5em;
             margin-top: 16px;
             text-align: center;
             white-space: normal;
+            &_in-2{
+                padding: 0 5px;
+            }
         }
     }
 }

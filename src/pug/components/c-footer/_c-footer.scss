@@ -1,6 +1,7 @@
 $cFooterBg: rgba(65, 65, 65, 1);
 .c-footer {
     position: relative;
+    margin-top: 85px;
     z-index: 2;
     background-color: $cFooterBg;
     margin-top: auto;
@@ -21,6 +22,7 @@ $cFooterBg: rgba(65, 65, 65, 1);
         }
     }
     &__copyrights {
+        font-size: 0.67em;
         color: white;
         text-transform: uppercase;
     }

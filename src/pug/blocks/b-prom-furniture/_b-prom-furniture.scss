@@ -1,17 +1,25 @@
 .b-prom-furniture {
+    margin-top: 200px;
     &__cnt {
-        &_title{
-        }
+        &_title{}
         &_data{
+            margin-top: 115px;
         }
     }
     &__title {}
-    
-    
+    &__text{
+        h5{
+            transform: translateY(-50%);
+        }
+    }
+    &__btn{
+        padding-left: 2.5em !important;
+        padding-right: 2.5em !important;
+    }
     &__img-wrpr {
         width: 50vw;
-    
     }
+    
     &__img {
     }
 }

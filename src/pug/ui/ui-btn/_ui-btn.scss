@@ -1,3 +1,5 @@
+$hoverAnimationTime: 700ms;
+$hoverEasing: ease-in-out;
 button {
     outline: none;
     font-size: 1em;
@@ -16,7 +18,7 @@ button {
         height: 100%;
         background-color: #{$color};
         top: 0;
-        transition: 650ms ease-in-out;
+        transition: #{$hoverAnimationTime} #{$hoverEasing};
     }
     &:before{
         transform: skewX(-45deg) translateX( -150% );
@@ -44,38 +46,81 @@ button {
     text-decoration: none;
     display: inline-block;
     position: relative;
-    padding: 0.85em 1.5em 0.65em;
+    padding: 0.85em 1em 0.65em;
     text-transform: uppercase;
     overflow: hidden;
     z-index: 2;
-    
+    white-space: nowrap;
+    font-size: 0.95em;
+//    font-size: 0.67em;
 }
 
 .ui-btn {
     @include btn;
     color: white;
     
-    
     &_primary{
         background-color: $cPrimary;
+        
     }
     &_secondary{
         background-color: $cSecondary;
+        @include white-hover;
+        transition: #{$hoverAnimationTime} #{$hoverEasing};
+        &:hover{
+            color: $cSecondary;
+        }
     }
     &_stroked{}
     &_stroked-red{
         color: $cSecondary;
         border: solid 0.15em currentColor;
+        
+        @include red-hover;
+        transition: #{$hoverAnimationTime} #{$hoverEasing};
+        &:hover{
+            color: white;
+        }
+    }
+    &_red-stroke-white{
+        background-color: $cSecondary;
+        color: white;
+        border: solid 0.15em currentColor;
+        
+        @include white-hover;
+        transition: #{$hoverAnimationTime} #{$hoverEasing};
+        &:hover{
+            color: $cSecondary;
+        }
+    }
+    &_stroked-white{
+        color: white;
+        border: solid 0.15em currentColor;
+        
+        @include white-hover;
+        transition: #{$hoverAnimationTime} #{$hoverEasing};
+        &:hover{
+            color: $cPrimary;
+        }
     }
     &_stroked-blue{}
-    &_shadow{}
+    &_shadow{
+        -moz-box-shadow: 4px 6px 18px rgba(0,0,0,.24);
+        -webkit-box-shadow: 4px 6px 18px rgba(0,0,0,.24);
+        box-shadow: 4px 6px 18px rgba(0,0,0,.24);
+    }
+    &_bigger{
+//        font-size: 1em;
+        @include stroke(1px);
+        padding: 0.85em 1em 0.65em;
+        border-width: 0.13em;
+    }
     &_big{
-        padding: 1.1em 1.4em 0.9em;
+        padding: 1.1em 1.1em 0.9em;
+        border-width: 0.13em;
     }
     
-    &_video {
-        display: block; width: 53px; height: 53px; background-color: white; @include mask-image('../img/video-btn.svg');
-    }
+    
     &_wide {
         padding: 0.75em 2em;
     }
@@ -83,18 +128,6 @@ button {
         width: 100%;
         text-align: center;
     }
-    
-    
-  &_del{
-    width: 13px;
-    height: 14px;
-    color: inherit;
-    background-color: currentColor;
-    @include mask-image('../img/icon-cart-del.svg');
-    &:hover{
-      color: red;
-    }
-  }
 }
 
 
