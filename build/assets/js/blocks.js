@@ -2,6 +2,7 @@
 
 
 
+
 const ham = document.querySelector('.js-ham'),
       hamCallback = function(e) {
           e.preventDefault();
@@ -9,7 +10,6 @@ const ham = document.querySelector('.js-ham'),
       };
 
 ham.addEventListener('click', hamCallback);
-
 
 
 

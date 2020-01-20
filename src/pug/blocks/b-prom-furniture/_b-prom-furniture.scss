@@ -1,5 +1,19 @@
 .b-prom-furniture {
     margin-top: 200px;
+    
+    position: relative;
+    &__bg{
+        @include bg-div;
+        opacity: 0.3;
+        left: 0;
+        top: 15px;
+        z-index: -1;
+    }
+    &__bg-img{
+        @include bg-img;
+        height: auto;
+    }
+    
     &__cnt {
         &_title{}
         &_data{

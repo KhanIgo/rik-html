@@ -1,5 +1,7 @@
 .b-spec-instr {
     margin-top: 100px;
+    position: relative;
+    z-index: 2;
     &__cnt {
         &_title{
         }

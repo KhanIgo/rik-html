@@ -1,5 +1,7 @@
 .b-tech-proc {
     margin-top: 150px;
+    
+    
     &__cnt {
         &-title{
             position: relative;
@@ -15,7 +17,12 @@
     &__title {}
     
     &__img-wrpr {
+        @include flex;
+        justify-content: flex-end;
+        align-items: flex-end;
         width: calc( 540px + ( 50vw - 600px ) );
+        padding-top: 70px;
+        position: relative;
     }
     &__img {}
     &__desc{
@@ -32,5 +39,16 @@
     &__btn{
         padding-left: 2em !important;
         padding-right: 2em !important;
+    }
+    &__slider-bg{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    &__slider-bg__img{}
+    .bx-wrapper{
+        width: 565px;
+        height: 580px;
     }
 }

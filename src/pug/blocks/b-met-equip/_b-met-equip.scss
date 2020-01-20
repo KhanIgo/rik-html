@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: flex-start;
     &__img-wrpr {
+        transition: 400ms ease-in-out;
     }
     &__img {
     }
@@ -32,5 +33,10 @@
         text-align: center;
         margin-top: 10px;
         padding: 20px;
+    }
+    &:hover{
+        .b-met-equip-item__img-wrpr{
+            transform: scale(1.1);
+        }
     }
 }

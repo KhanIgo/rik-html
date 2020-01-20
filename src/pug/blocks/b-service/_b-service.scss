@@ -3,6 +3,7 @@
     
     &__bg{
         @include bg-div;
+        opacity: 0.3;
     }
     &__bg-img{
         @include bg-img;

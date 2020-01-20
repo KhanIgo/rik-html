@@ -1,5 +1,7 @@
 .b-consult {
-    padding: 40px 0;
+    padding-top: 40px;
+    position: relative;
+    z-index: 2;
     &__cnt {
         text-align: center;
         &_1{

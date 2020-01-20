@@ -1,10 +1,28 @@
 .b-rus-brand {
-    padding: 20px 0;
+    padding-top: 110px;
+    margin-top: -55px;
+    padding-bottom: 20px;
     margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    
+    &__bg{
+        @include bg-div;
+        opacity: 0.3;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    &__bg-img{
+        @include bg-img;
+        height: auto;
+    }
+    
     &__cnt {
     }
     &__img-wrpr {
         padding: 0;
+        position: relative;
     }
     &__img {}
     &__text {
@@ -13,4 +31,11 @@
     &__desc{
         margin-top: 2.5em;
     }
+    &__slider-logo{
+        position: absolute;
+        left: -60px;
+        bottom: -60px;
+        z-index: 10;
+    }
+    &__slider-logo-img{}
 }

@@ -205,6 +205,14 @@ span.spacer{
         height: 100%;
         transform: skewX($skew);
         border-radius: $skewBr;
+        @media (max-width: 1350px) {
+            width: 100%;
+            left: 0;
+        }
+        @media (max-width: 1200px) {
+            width: calc( 100% - 30px );
+            left: 15px;
+        }
     }
     &_right{
         &:after{
@@ -242,5 +250,14 @@ span.spacer{
     &:after{
         background-image: none;
         background-color: $cBlueLight !important;
+        @media (max-width: 1300px) {
+            transform: skewX(0);
+            border-radius: 0;
+            width: 110vw;
+            left: calc( 600px - 50vw );
+        }
+        @media (max-width: 1200px) {
+            left: -15px;
+        }    
     }
 }
