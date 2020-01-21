@@ -20,7 +20,7 @@
         @include flex;
         justify-content: flex-end;
         align-items: flex-end;
-        width: calc( 540px + ( 50vw - 600px ) );
+        width: calc( 500px + ( 50vw - 500px ) );
         padding-top: 70px;
         position: relative;
     }
@@ -40,8 +40,16 @@
         padding-left: 2em !important;
         padding-right: 2em !important;
     }
+    &__slider-wrpr{
+        @include flex;
+        justify-content: flex-end;
+    }
     &__slider{
         overflow: hidden;
+        max-width: 550px;
+    }
+    &__slide{
+        
     }
     &__slider-bg{
         position: absolute;
@@ -50,8 +58,4 @@
         left: 0;
     }
     &__slider-bg__img{}
-    .bx-wrapper{
-        width: 565px;
-        height: 580px;
-    }
 }
