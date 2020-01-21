@@ -184,7 +184,6 @@ span.spacer{
 .t-title-shape, .t-light-blue-content{
     position: relative;
     width: 100%;
-    max-width: 1200px;
     min-height: 140px;
     margin-left: auto;
     margin-right: auto;
@@ -234,6 +233,7 @@ span.spacer{
     }
 }
 .t-title-shape{
+    max-width: 1200px;
     text-transform: uppercase;
     &:after{
         @include grad-hor;
@@ -250,14 +250,27 @@ span.spacer{
     &:after{
         background-image: none;
         background-color: $cBlueLight !important;
+//        max-width: 1300px;
+        width: 100vw;
         @media (max-width: 1300px) {
-            transform: skewX(0);
-            border-radius: 0;
-            width: 110vw;
-            left: calc( 600px - 50vw );
         }
-        @media (max-width: 1200px) {
-            left: -15px;
-        }    
+        @media (min-width: 1000px) {
+            width: 90vw;
+            left: calc( 500px - 45vw );
+        }
+        @media (max-width: 999px) {
+            width: 92%;
+            left: 4%;
+        }
+//        @media (max-width: 1200px) {
+//            left: -15px;
+//        }    
+    }
+    &_left{
+        &:after{
+            width: 120vw;
+            left: -40vw;
+        }
+        
     }
 }

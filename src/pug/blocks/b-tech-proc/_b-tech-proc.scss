@@ -40,6 +40,9 @@
         padding-left: 2em !important;
         padding-right: 2em !important;
     }
+    &__slider{
+        overflow: hidden;
+    }
     &__slider-bg{
         position: absolute;
         z-index: -1;

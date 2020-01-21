@@ -28,11 +28,12 @@
     }
     
     &-item {
-        width: 370px;
-        height: 180px;
+        width: 300px;
+        height: 155px;
         flex-shrink: 0;
         flex-grow: 0;
         margin: 10px;
+        padding-bottom: 10px;
         position: relative;
         background-color: white;
         -moz-box-shadow: 0 12px 18px rgba(0,0,0,.1); /* drop shadow */
@@ -54,8 +55,10 @@
         &__desc {
             width: 100%;
             position: absolute;
-            bottom: 10px;
+            bottom: 7px;
             text-align: center;
+            font-size: 0.75em;
+            font-weight: 600;
         }
         
         &_1{}

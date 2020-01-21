@@ -16,3 +16,12 @@
     border: 0 !important;
     background: transparent !important;
 }
+.owl-stage-outer, .owl-stage, .owl-item{
+    float: left;    
+}
+
+.owl-nav{
+    &.disabled{
+        display: none;
+    }
+}

@@ -1,7 +1,7 @@
 $gutter: 10px;
-$cntMaxWidth: 1200px;
-$cntWideMaxWidth: 1600px;
-
+$cntMaxWidth: 1000px;
+$cntWideMaxWidth: 1280px;
+$columnsQty: 12;
 img{
     max-width: 100%;
 }
@@ -25,7 +25,6 @@ img{
 .gr-grow{
     flex-grow: 100;
 }
-.shrink
 
 .pl_0 {
     padding-left: 0;
@@ -40,63 +39,22 @@ img{
 }
 
 @mixin grid($prefix, $suffix, $paddings){
-    .#{$prefix}-1_#{$suffix}{
-        $width: 8.3333%;
-        @include grid-item($width, $paddings);
-    }
-    .#{$prefix}-2_#{$suffix}{
-        $width: 16.6666%;
-        @include grid-item($width, $paddings);
-    }
-    .#{$prefix}-3_#{$suffix}{
-        $width: 25%;
-        @include grid-item($width, $paddings);
-    }
-    .#{$prefix}-4_#{$suffix}{
-        $width: 33.3333%;
-        @include grid-item($width, $paddings);
-    }
-    .#{$prefix}-5_#{$suffix}{
-        $width: 41.6666%;
-        @include grid-item($width, $paddings);
-    }
-    .#{$prefix}-6_#{$suffix}{
-        $width: 50%;
-        @include grid-item($width, $paddings);
-    }
-    .#{$prefix}-7_#{$suffix}{
-        $width: 58.3333%;
-        @include grid-item($width, $paddings);
-    }
-    .#{$prefix}-8_#{$suffix}{
-        $width: 66.6666%;
-        @include grid-item($width, $paddings);
-    }
-    .#{$prefix}-9_#{$suffix}{
-        $width: 75%;
-        @include grid-item($width, $paddings);
-    }
-    .#{$prefix}-10_#{$suffix}{
-        $width: 83.3333%;
-        @include grid-item($width, $paddings);
-    }
-    .#{$prefix}-11_#{$suffix}{
-        $width: 91.6666%;
-        @include grid-item($width, $paddings);
-    }
-    .#{$prefix}-12_#{$suffix}{
-        $width: 100%;
-        @include grid-item($width, $paddings);
+    @for $i from 1 through $columnsQty {
+        .#{$prefix}-#{$i}_#{$suffix}{
+            $width: 100% / $columnsQty * $i;
+            @include grid-item($width, $paddings);
+        }
     }
     .full-screen_#{$suffix}{
         width: 100vw;
         min-height: 100vh;
     }
 }
+
 @mixin grid-item($width, $paddings){
 //    flex: #{$width} 0 0;
-    flex-basis: #{$width};
-    flex-shrink: 0;
+    flex: #{$width} 0 0;
+    max-width: #{$width};
     padding-left: #{$paddings};
     padding-right: #{$paddings};
 }
