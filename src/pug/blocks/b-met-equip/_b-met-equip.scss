@@ -14,16 +14,26 @@
         @include flex;
         justify-content: space-between;
         margin-top: 35px;
+        flex-wrap: wrap;
+        @media (max-width: $tabMaw){
+            justify-content: center;
+        }
     }
 }
 
 .b-met-equip-item {
     flex: 33.33% 0 0;
-        
+    min-width: 300px;
     @include flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    @media (max-width: $tabMaw){
+        margin: 30px;
+    }
+    @media (max-width: $mobMaw){
+        margin: 30px 0;
+    }
     &__img-wrpr {
         transition: 400ms ease-in-out;
     }

@@ -36,6 +36,10 @@
                 width: 110vw;
                 left: -15px;
             }
+            @media (max-width: $mobMaw){
+                width: 100vw;
+                left: 0;
+            }
         }
         
         &_2{
@@ -67,6 +71,7 @@
         @media (max-width: 1300px) {
             justify-content: center;
         }
+        
         &_2{
             .b-advantages-item{
                 min-width: 150px;
@@ -87,6 +92,9 @@
         @include plr(0);
         @media (max-width: 1300px){
             margin-bottom: 30px;
+        }
+        @media (max-width: $mobMaw){
+            flex: 50% 0 0 !important;
         }
         
         &_6{

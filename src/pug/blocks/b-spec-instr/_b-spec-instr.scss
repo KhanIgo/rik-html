@@ -26,6 +26,9 @@
         align-items: center;
     }
     &__desc{}
-    
+    &__action{
+        @media (max-width: $mobMaw){
+        }
+    }
     
 }

@@ -51,6 +51,7 @@ button {
     overflow: hidden;
     z-index: 2;
     white-space: nowrap;
+    max-width: 100%;
     
     -moz-box-shadow: 4px 6px 18px rgba(0,0,0,.24);
     -webkit-box-shadow: 4px 6px 18px rgba(0,0,0,.24);
@@ -58,6 +59,12 @@ button {
     
     font-size: 0.95em;
 //    font-size: 0.67em;
+    
+    @media (max-width: $mobMaw){
+        width: 100%;
+        text-align: center;
+        white-space: normal;
+    }
 }
 
 .ui-btn {

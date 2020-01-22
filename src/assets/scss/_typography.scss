@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6{
 h1{
     font-size: 2.5em;
     @media (max-width: $mobMaw){
-        font-size: 1.75em;
+        font-size: 1.65em;
     }
 }
 h2{
@@ -21,9 +21,15 @@ h3{
 }
 h4{
     font-size: 1.5em;
+    @media (max-width: 900px){
+        font-size: 1.1em;
+    }
 }
 h5{
     font-size: 1.23em;
+    @media (max-width: 900px){
+        font-size: 1.05em;
+    }
 }
 h6{
     font-size: 1em;
@@ -196,7 +202,7 @@ span.spacer{
     justify-content: center;
     align-items: center;
     padding: 20px 50px 10px;
-
+    //overflow: hidden;
     &:after{
         content: '';
         position: absolute;
@@ -236,8 +242,15 @@ span.spacer{
     }
 }
 .t-title-shape{
+//    max-width: 100vw;
     max-width: 1200px;
     text-transform: uppercase;
+    @media (min-width: 1300px){
+        
+    }
+    
+    
+    
     &:after{
         @include grad-hor;
     }
@@ -246,7 +259,30 @@ span.spacer{
             @include grad-hor_reverse;
         }
     }
+    @media (max-width: $mobMaw){
+        max-width: 100vw;
+        overflow: hidden;
+        &_left{
+            left: 0px;
+        }
+        &_right{
+            right: 0px;
+        }
+    }
 } 
+.cnt{
+    .t-title-shape{
+        @media (max-width: $mobMaw){
+            &_left{
+                left: -10px;
+            }
+            &_right{
+                right: -10px;
+            }
+        }
+    } 
+}
+
 .t-light-blue-content{
     padding: 40px;
     color: $cText;
@@ -264,6 +300,12 @@ span.spacer{
         @media (max-width: 999px) {
             width: 92%;
             left: 4%;
+        }
+        @media (max-width: $mobMaw){
+            transform: skewX( 0deg );
+            border-radius: 0;
+            left: 0px;
+            width: 100vw;
         }
 //        @media (max-width: 1200px) {
 //            left: -15px;

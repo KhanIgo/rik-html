@@ -107,30 +107,54 @@ img{
 
 @include grid('col', 'xs', '10px');
 @include offset('xs');
+.col-12_xs{
+    padding-left: 0;
+    padding-right: 0;
+}
 @media (min-width: 480px) {
     @include grid('col', 'sm', $gutter);
     @include offset('sm');
     @include offset-to-win-border-in-sml('sm');
+    .col-12_sm{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 @media (min-width: 750px) {
     @include grid('col', 'md', $gutter);
     @include offset('md');
     @include offset-to-win-border-in-sml('md');
+    .col-12_md{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 @media (min-width: 980px) {
     @include grid('col', 'lg', $gutter);
     @include offset('lg');
     @include offset-to-win-border-in-sml('lg');
+    .col-12_lg{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 @media (min-width: 1200px) {
     @include grid('col', 'xl', $gutter);
     @include offset('xl');
+    .col-12_xl{
+        padding-left: 0;
+        padding-right: 0;
+    }
     @include offset-to-win-border-in-big('xl');
 }
 @media (min-width: 1800px) {
     @include grid('col', 'xxl', $gutter);
     @include offset('xxl');
     @include offset-to-win-border-in-big('xxl');
+    .col-12_xxl{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 
@@ -153,5 +177,8 @@ img{
     }
     &_full{
         max-width: 100%;
+    }
+    @media (max-width: $mobMaw){
+//        overflow: hidden;
     }
 }
