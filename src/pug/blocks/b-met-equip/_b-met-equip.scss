@@ -1,5 +1,8 @@
 .b-met-equip {
     margin-top: 200px;
+    @media (max-width: $mobMaw){
+        margin-top: 30px;
+    }
     &__cnt {
     }
     &__title {

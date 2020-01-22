@@ -2,6 +2,7 @@
     margin-top: 100px;
     position: relative;
     z-index: 2;
+    overflow: hidden;
     &__cnt {
         &_title{
         }
@@ -24,9 +25,13 @@
         @include flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
     &__desc{}
     &__action{
+        @media (max-width: $tabMaw){
+            margin-top: 20px;
+        }
         @media (max-width: $mobMaw){
         }
     }
