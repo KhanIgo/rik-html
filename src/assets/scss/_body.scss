@@ -6,6 +6,16 @@ body{
     letter-spacing: 0.01em;
     color: $cText;
     line-height: 1.25;
-    
+    @media (max-width: 1000px) {
+        padding-top: 130px;
+    }
+    @media (max-width: $mobMaw) {
+        font-size: 15px;
+        padding-top: 45px;
+    }
+    &>.row{
+        overflow-x: hidden;
+        width: 100vw;
+    }
     
 }

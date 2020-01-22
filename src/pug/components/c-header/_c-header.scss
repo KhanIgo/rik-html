@@ -9,7 +9,7 @@
     
     
     @media (max-width: 900px) {
-        height: 70px;
+//        height: 70px;
         background-color: white;
         position: fixed;
         top: 0;
@@ -29,10 +29,29 @@
         
     &__logo{
         margin: 12px 0;
+        @media (max-width: $mobMaw) {
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
     }
     &__nav{
-        margin-left: auto;
-        margin-right: 40px;
+        transition: 500ms ease-in-out;
+        @media (min-width: 1001px) {
+            margin-left: auto;
+            margin-right: 40px;
+        }
+        @media (max-width: 1000px) {
+            order: 1;
+            width: 100%;
+        }
+        @media (max-width: $mobMaw) {
+            max-height: 0;
+            overflow: hidden;
+            &.is-active{
+                max-height: 700px;
+            }
+        }
+        
     }
     &__contacts{
         align-self: stretch;
@@ -41,7 +60,9 @@
         background: $cBlueDark;
         font-size: 1.5em;
         padding: 0 32px;
-        
+        @media (max-width: $mobMaw) {
+            display: none;
+        }
     }
     &__phone-link{
         font-size: 0.67em;
@@ -50,6 +71,17 @@
         position: relative;
         @include hover-underline;
         @include ba-bottom(1px);
+    }
+    &__hamburger{
+        position: absolute;
+        right: 20px;
+        top: 13px;
+        color: black;
+        font-size: 0.85em;
+        display: none;
+        @media (max-width: $mobMaw){
+            display: block;
+        }
     }
     
     

@@ -11,6 +11,10 @@
     
     &__cnt {
         @include ptb(100);
+        @media (max-width: $mobMaw) {
+            @include ptb(50);
+        }
+        
     }
     &__content {}
     &__offer {
