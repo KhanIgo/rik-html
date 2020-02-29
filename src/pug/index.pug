@@ -3,7 +3,7 @@ include parts/_mixins
 html(lang='RU-ru')
     +head('Главная')
     
-    body
+    body.body-front
         
         include components/c-header/c-header
         
@@ -24,6 +24,7 @@ html(lang='RU-ru')
         include blocks/b-contacts/b-contacts
         include components/c-footer/c-footer
         include parts/_footer-scripts
+        include ui/ui-contacts/ui-contacts
         
         script.
             jQuery(function($) {});

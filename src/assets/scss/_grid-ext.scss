@@ -1,6 +1,4 @@
 .cnt{
-    
-    
     &_plan{
         position: relative;
     }
@@ -117,4 +115,10 @@
             transform: skewX($skew) translateX(15%);
         }
     }
+}
+
+
+.xdebug-var-dump{
+    max-width: 100%;
+    white-space: normal;
 }

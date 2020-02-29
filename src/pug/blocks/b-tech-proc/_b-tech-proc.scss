@@ -1,6 +1,8 @@
 .b-tech-proc {
     margin-top: 150px;
-    
+    @media (max-width: $mobMaw){
+        margin-top: 50px;
+    }
     
     &__cnt {
         &-title{

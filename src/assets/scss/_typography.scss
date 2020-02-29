@@ -35,6 +35,19 @@ h6{
     font-size: 1em;
 }
 
+.t-media-block{
+    text-decoration: none;
+    color: inherit;
+    @include flex;
+    flex-direction: column;
+    
+    &__image-wrpr{}
+    &__image{}
+    &__text{}
+    >span{
+//        display: block;
+    }
+}
 .t-blue{
     color: $cBlueDark;
 }
@@ -86,7 +99,7 @@ p{
 }
 
 
-ul:not(.c-nav__list){
+ul.list{
     list-style: none;
     @include flex;
     flex-direction: column;
@@ -227,6 +240,9 @@ span.spacer{
     align-items: center;
     padding: 20px 50px 10px;
     //overflow: hidden;
+    @media (max-width: $mobMaw){
+        min-height: 90px;
+    }
     &:after{
         content: '';
         position: absolute;

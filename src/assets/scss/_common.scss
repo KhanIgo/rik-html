@@ -1,0 +1,7 @@
+.page{
+    &:not(.home){
+        .wrapper{
+            padding-top: 35px;
+        }
+    }
+}

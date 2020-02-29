@@ -1,7 +1,6 @@
 .b-advantages {
     position: relative;
     z-index: 1;
-    margin-top: -55px;
     &_mt0{
         margin-top: 0;
     }
@@ -11,6 +10,12 @@
     &__cnt {
         position: relative;
         padding: 80px 0 40px;
+//        margin-top: -55px;
+        transform: translateY( -55px );
+        
+        @media (max-width: $mobMaw){
+            padding-bottom: 0px;
+        }
         &:after{
             content: '';
             position: absolute;
@@ -65,6 +70,7 @@
         @include flex;
         justify-content: center;
         flex-wrap: wrap;
+        width: 100%;
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
@@ -74,7 +80,7 @@
         
         &_2{
             .b-advantages-item{
-                min-width: 150px;
+                //@media (min-width: $tabMaw){ min-width: 200px; }
                 @media (max-width: 1200px) {
                     margin: 15px 20px;
                 }
@@ -94,7 +100,7 @@
             margin-bottom: 30px;
         }
         @media (max-width: $mobMaw){
-            flex: 50% 0 0 !important;
+            flex: 45% 0 0 !important;
         }
         
         &_6{
@@ -128,7 +134,10 @@
             width: 100%;
             margin-top: 16px;
             text-align: center;
-            white-space: normal;
+            white-space: nowrap;
+            
+            
+            
             @media (max-width: 1400px) {
                 font-size: 0.9em;
                 padding: 0 25px;

@@ -16,7 +16,14 @@ const gulp = require('gulp'),
     notify = require("gulp-notify"),
     plumber = require("gulp-plumber"),
     gulpCopy = require('gulp-copy'),
+    args = require('yargs').argv,
+    minify = require('gulp-minify'),
+    gulpif = require('gulp-if'),
+    cssmin = require('gulp-cssmin'),
+    cleanCSS = require('gulp-clean-css'),
     sourcemaps = require("gulp-sourcemaps");
+
+const prod = args.prod || false;
 
 gulp.task('clean:build', function (done) {
     return del('build');
@@ -59,10 +66,11 @@ gulp.task('scssCompile', function () {
                 }
             })
         }))
-        .pipe(sourcemaps.init())
-        .pipe(sass())
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('build/assets/css'))
+        .pipe( gulpif(!prod, sourcemaps.init()))
+        .pipe( gulpif( !prod, sass()))
+        .pipe( gulpif( prod, sass({ outputStyle: 'compressed' })))
+        .pipe( gulpif( !prod, sourcemaps.write()))
+        .pipe( gulp.dest('build/assets/css') )
         .pipe(stream());
 });
 gulp.task('scss', gulp.series('scssConcat', 'scssCompile' ));
@@ -139,6 +147,7 @@ gulp.task('serve', function (done) {
     }, function () {});
     done();
 });
+
 
 gulp.task('watchers', function (done) {
     gulp.watch('src/pug/**/*.pug', gulp.series('pug'));

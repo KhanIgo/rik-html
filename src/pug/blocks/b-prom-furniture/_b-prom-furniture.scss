@@ -1,7 +1,9 @@
 .b-prom-furniture {
     margin-top: 200px;
-    
     position: relative;
+    @media (max-width: $mobMaw){
+        margin-top: 50px;
+    }
     &__bg{
         @include bg-div;
         opacity: 0.3;

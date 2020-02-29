@@ -5,7 +5,9 @@
     margin-bottom: 50px;
     position: relative;
     z-index: 1;
-    
+    @media (max-width: $mobMaw){
+        margin-bottom: 0;
+    }
     &__bg{
         @include bg-div;
         opacity: 0.3;

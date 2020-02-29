@@ -1,4 +1,4 @@
-body{
+.body-front{
     width: 100vw;
     overflow-x: hidden;
     font-family: "DIN Next Cyr" , Arial;
@@ -6,11 +6,15 @@ body{
     letter-spacing: 0.01em;
     color: $cText;
     line-height: 1.25;
+    @media (min-width: 1000px) {
+        
+    }
     @media (max-width: 1000px) {
         padding-top: 130px;
     }
     @media (max-width: $mobMaw) {
         font-size: 15px;
         padding-top: 45px;
+        padding-bottom: 60px;
     }
 }

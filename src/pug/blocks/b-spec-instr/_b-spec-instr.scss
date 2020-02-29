@@ -3,6 +3,9 @@
     position: relative;
     z-index: 2;
     overflow: hidden;
+    @media (max-width: $mobMaw){
+        margin-top: 10px;
+    }
     &__cnt {
         &_title{
         }
@@ -10,6 +13,10 @@
             margin-top: 40px;
             padding-top: 125px;
             padding-bottom: 100px;
+            @media (max-width: $mobMaw){
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
         }
     }
     &__title {

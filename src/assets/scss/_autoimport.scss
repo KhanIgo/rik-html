@@ -1,8 +1,4 @@
-@import './../../pug/components/c-breadcrumbs/_c-breadcrumbs.scss';
-@import './../../pug/components/c-footer/_c-footer.scss';
-@import './../../pug/components/c-header/_c-header.scss';
-@import './../../pug/components/c-logo-link/_c-logo-link.scss';
-@import './../../pug/components/c-nav/_c-nav.scss';
+@import './../../pug/ui/ui-to-top/_ui-to-top.scss';
 @import './../../pug/blocks/_/_.scss';
 @import './../../pug/blocks/b-advantages/_b-advantages.scss';
 @import './../../pug/blocks/b-choose-us/_b-choose-us.scss';
@@ -17,8 +13,15 @@
 @import './../../pug/blocks/b-spec-instr/_b-spec-instr.scss';
 @import './../../pug/blocks/b-supply/_b-supply.scss';
 @import './../../pug/blocks/b-tech-proc/_b-tech-proc.scss';
+@import './../../pug/blocks/b-to-home/_b-to-home.scss';
 @import './../../pug/blocks/b-top/_b-top.scss';
+@import './../../pug/components/c-breadcrumbs/_c-breadcrumbs.scss';
+@import './../../pug/components/c-footer/_c-footer.scss';
+@import './../../pug/components/c-header/_c-header.scss';
+@import './../../pug/components/c-logo-link/_c-logo-link.scss';
+@import './../../pug/components/c-nav/_c-nav.scss';
 @import './../../pug/ui/ui-btn/_ui-btn.scss';
+@import './../../pug/ui/ui-contacts/_ui-contacts.scss';
 @import './../../pug/ui/ui-form/_ui-form.scss';
 @import './../../pug/ui/ui-hamburger/_ui-hamburger.scss';
 @import './../../pug/ui/ui-icon/_ui-icon.scss';

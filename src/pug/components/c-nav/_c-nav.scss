@@ -1,22 +1,56 @@
 .c-nav {
-    font-size: 0.67em;
+    font-size: 0.8em;
+    @media (max-width: $mobMaw){
+        font-size: 1.4em;
+    }
     &__list {
-        display: flex;
+        @include flex;
         list-style: none;
-        @media (max-width: 1000px){
-            justify-content: center;
-            margin: 20px;
+        &_level-1{
+            @media (max-width: 1000px){
+                justify-content: center;
+                margin: 20px;
+            }
+            @media (max-width: $mobMaw) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
-        @media (max-width: $mobMaw) {
+        &_level-2{
             flex-direction: column;
-            align-items: flex-start;
+            white-space: nowrap;
+//            margin: 5px;
+            background-color: rgba(255, 255, 255, 0.85);
+            @media (min-width: $mobMaw){
+                padding: 10px;
+            }
+            @media (max-width: $mobMaw){
+                padding: 0 0.5em;
+                font-size: 0.8em;
+            }
         }
     }
     &__item {
         margin: 0 25px;
+        position: relative;
+        &.menu-item-has-children{
+            padding-right: 30px;
+        }
         @media (max-width: 600px){
             margin: 10px 0;
-            font-size: 1.5em;
+        }
+        &_level-2{
+            margin: 10px 0;
+        }
+        &:hover{
+            >.c-nav__submenu{
+                @media (min-width: $mobMaw){
+                    max-height: 500px;
+                    -webkit-box-shadow: 0px 5px 49px -1px rgba(255,255,255,0.81);
+                    -moz-box-shadow: 0px 5px 49px -1px rgba(255,255,255,0.81);
+                    box-shadow: 0px 5px 49px -1px rgba(255,255,255,0.81);
+                }
+            }
         }
     }
     &__link{
@@ -29,4 +63,21 @@
         @include stroke(1px);
         @include hover-underline;
     }
+    &__submenu{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        overflow: hidden;
+        transition: 400ms ease-in-out;
+        @media (min-width: $mobMaw){
+            max-height: 0;
+        }
+        @media (max-width: $mobMaw){
+            position: relative;
+            overflow: visible;
+            
+        }
+    }
+    
+    .ui-icon{}
 }

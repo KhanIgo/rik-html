@@ -1,6 +1,12 @@
 .c-header {
     position: relative;
     z-index: 60;
+    @media (max-width: $tabMaw){
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: white;
+    }
     &.is-fixed{
         position: fixed;
         top: 0;
